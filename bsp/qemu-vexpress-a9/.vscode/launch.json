@@ -10,7 +10,7 @@
             "stopAtEntry": true,
             "cwd": "${workspaceRoot}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "miDebuggerServerAddress": "localhost:1234",
             "serverLaunchTimeout": 2000,
             "targetArchitecture": "ARM",
@@ -18,9 +18,9 @@
                 {
                     "text": "cd ${workspaceRoot}"
                 },
-                {
-                    "text": "shell qemu-dbg.sh"
-                },
+                // {
+                //     "text": "shell qemu-dbg.sh"
+                // },
                 {
                     "text": "target remote localhost:1234"
                 },
@@ -33,7 +33,7 @@
             ],
             "customLaunchSetupCommands": [],
             "launchCompleteCommand": "exec-run",
-            "preLaunchTask": "qemu debug",
+            // "preLaunchTask": "qemu debug",
             "osx": {
                 "MIMode": "gdb",
                 "miDebuggerPath": "arm-none-eabi-gdb"

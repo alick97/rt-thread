@@ -36,9 +36,10 @@
             }
         },
         {
-            "label": "qemu simulator",
+            "label": "qemu debug",
             "type": "shell",
-            "command": "qemu.bat",
+            "command": "bash ${workspaceRoot}/qemu-dbg.sh",
+            // "command": "echo start",
             "problemMatcher" : []
         }
     ]
